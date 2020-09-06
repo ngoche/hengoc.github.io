@@ -1,0 +1,175 @@
+<head>
+	<link rel="icon" type="image/gif" href="https://www.facebook.com/?ref=logo" />
+	<title>Henv</title>
+</head>
+<style>
+	*{
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+		color: #8b76e0;
+		font-weight: bold;
+	}
+	body{
+		/*background-image: url("background-img.png");*/
+		background: #8ccbe8;
+		background-size: 100%;
+	}
+	.header{
+		width:100%;
+		padding: 0 22% 3% 18%;
+	}
+	.main-column {
+		float:left;
+	}
+	.main:after{
+		display: table;
+		content: "";
+		clear: both;
+	}
+	.side{
+		height: auto;
+		padding: 10px;
+	}
+	.side-left{
+		width: 18%;
+	}
+	.side-right{
+		width:22%;
+	}
+	.container{
+		width: 60%;
+		height: auto;
+	}
+	.col-24{
+		width:24%;
+	}
+	.col-25{
+		width: 25%;
+	}
+	.col-36{
+		width: 36%;
+	}
+	.col-72{
+		width: 72%;
+	}
+	.form-area{
+		width:100%;
+		padding: 0 0 7% 0;
+	}
+	.form-lone{
+		float: left;
+	}
+	.phone{
+		float: left;
+	}
+	input[type=text]{
+		width:100%;
+		height: 40px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+	.limit-width{
+		width: 99% !important;
+	}
+	label{
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+	.line{
+		border: 1px solid white;
+		width: 93.5%;
+		margin: 50px 0 50px 0;
+	}
+	.button{
+		background: #b1d7e7;
+		border: 1px solid white;
+		border-radius: 5px;
+		height: 40px;
+	    width: 120px;
+	    font-size: 20px;
+	}
+	
+</style>
+<body>
+	<div class="header">
+		<div class="title">
+			<h1 class="web-title">Contact form</h1>
+			<p class="world">Please fill your Infomation Lorem ipsum dolor, sit ame</p>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main-column side side-left"></div>
+		<div class="main-column container">
+
+			<div class="form-area">
+				<div class="col-25 form-lone">
+					<label for="name">Your Name </label>
+				</div>
+				<div class="col-36 form-lone">
+					<input type="text" class="name first-name limit-width">
+				</div>
+				<div class="col-36 form-lone">
+					<input type="text" class="name last-name">
+				</div>
+			</div>
+
+			<div class="form-area">	
+				<div class="col-25 form-lone">
+					<label for="email">Your Email </label>
+				</div>
+				<div class="col-72 form-lone">
+					<input type="text" class="email">
+				</div>
+			</div>
+
+			<div class="form-area">
+				<div class="col-25 form-lone">
+					<label for="phone">Your phone* </label>
+				</div>
+				<div class="col-24 form-lone">
+					<input type="text" class="phone phone-head limit-width">
+				</div>
+				<div class="col-24 form-lone">
+					<input type="text" class="phone phone-middle limit-width">
+				</div>
+				<div class="col-24 form-lone">
+					<input type="text" class="phone phone-end">
+				</div>
+			</div>
+
+			<div class="form-area">
+				<div class="col-25 form-lone">
+					<label for="msg-obj">Message Subject* </label>
+				</div>
+				<div class="col-72 form-lone">
+					<input class=" msg-obj" type="text"></input>
+				</div>
+			</div>
+
+			<div class="form-area">
+				<div class="col-25 form-lone">
+					<label for="msg">Message* </label>
+				</div>
+				<div class="col-72 form-lone">
+					<input type="text" class="msg">
+				</div>
+			</div>
+
+			<div class="form-area">
+				<div class="col-25 form-lone">
+					<label class="verify">Verification*</label>
+				</div>
+				 <div  class="g-recaptcha form-lone" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+			</div>
+			<div class="line"></div>
+			<div class="form-area">
+				<div class="form-lone">
+					<button class="button" type="button">Submit</button>
+				</div>
+			</div>
+		</div>
+		<div class="main-column side side-right"> </div>
+	</div>
+</body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
