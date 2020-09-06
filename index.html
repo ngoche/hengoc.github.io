@@ -1,175 +1,184 @@
-<head>
-	<link rel="icon" type="image/gif" href="https://www.facebook.com/?ref=logo" />
-	<title>Henv</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-	*{
-		box-sizing: border-box;
-		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-		color: #8b76e0;
-		font-weight: bold;
-	}
-	body{
-		background-image: url("background-img.png");
-		/*background: #8ccbe8;*/
-		background-size: 100%;
-	}
-	.header{
-		width:100%;
-		padding: 0 22% 3% 18%;
-	}
-	.main-column {
-		float:left;
-	}
-	.main:after{
-		display: table;
-		content: "";
-		clear: both;
-	}
-	.side{
-		height: auto;
-		padding: 10px;
-	}
-	.side-left{
-		width: 18%;
-	}
-	.side-right{
-		width:22%;
-	}
-	.container{
-		width: 60%;
-		height: auto;
-	}
-	.col-24{
-		width:24%;
-	}
-	.col-25{
-		width: 25%;
-	}
-	.col-36{
-		width: 36%;
-	}
-	.col-72{
-		width: 72%;
-	}
-	.form-area{
-		width:100%;
-		padding: 0 0 7% 0;
-	}
-	.form-lone{
-		float: left;
-	}
-	.phone{
-		float: left;
-	}
-	input[type=text]{
-		width:100%;
-		height: 40px;
-		border-radius: 5px;
-		border: 1px solid #ccc;
-		box-sizing: border-box;
-	}
-	.limit-width{
-		width: 99% !important;
-	}
-	label{
-		padding: 12px 12px 12px 0;
-		display: inline-block;
-	}
-	.line{
-		border: 1px solid white;
-		width: 93.5%;
-		margin: 50px 0 50px 0;
-	}
-	.button{
-		background: #b1d7e7;
-		border: 1px solid white;
-		border-radius: 5px;
-		height: 40px;
-	    width: 120px;
-	    font-size: 20px;
-	}
-	
+  *{
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #8b76e0;
+    font-weight: bold;
+  }
+  body{
+    background-image: url('background-img.png');
+    background-size: 100%;
+  }
+  .header{
+    color: #22b1da;
+    padding:  0 16.66% 0 16.66%;
+  }
+  .content{padding: none;}
+  .container::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .side{
+    display: none;
+  }
+  [class*="col-"], .header{
+    width: 100% ;
+    /*padding: 15px;*/
+  }
+  @media only screen and (min-width: 600px){
+    .col-sm-2{width: 16.66%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-8{width: 66.66%;}
+    .col-sm-10{width: 83.33%;}
+    .side{display: block;}
+    .content{padding: 20px 30px 50px 25px;}
+  }
+  @media only screen and (min-width: 768px){
+    .col-lg-2{width: 16.66%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-8{width: 66.66%;}
+    .col-lg-10{width: 83.33%;}
+    .side{display: block;}
+    .content{padding: 20px 30px 50px 25px;}
+  }
+  .container-content{
+    float: left;
+  }
+  td{
+    padding-bottom: 25px;
+  }
+  label{
+    padding: 12px 12px 12px 0;
+  }
+  input, select{
+    height: 40px;
+    border: 1px solid #b3adad;
+  }
+  textarea, input, select{
+    border-radius: 4px;
+    width: 99%;
+  }
+  .first-name{
+    width: 49%;
+  }
+  .last-name{
+    width: 49%;
+  }
+
+  .line{
+    border: solid 1px #ccc;
+  }
+  .submit-btn{
+    width: 190px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #b3adad;
+    border: 1px solid white;
+    text-align: center;
+    background: #a0bddd;
+    font-size: 20px;
+  }
+  .side{
+    height: auto;
+    padding: 10px;
+  }
 </style>
-<body>
-	<div class="header">
-		<div class="title">
-			<h1 class="web-title">Contact form</h1>
-			<p class="world">Please fill your Infomation Lorem ipsum dolor, sit ame</p>
-		</div>
-	</div>
-	<div class="main">
-		<div class="main-column side side-left"></div>
-		<div class="main-column container">
+<div class="header">
+    <div class="title">
+      <h1 class="web-title">Contact form</h1>
+      <p class="world">Please fill your Infomation Lorem ipsum dolor, sit ame</p>
+    </div>
+</div>
+<div class="container">
+  <div class="container-content col-sm-2 col-lg-2 side">
+    
+  </div>
+  <div class="container-content col-sm-8 col-lg-8">
+    <div class="content">
 
-			<div class="form-area">
-				<div class="col-25 form-lone">
-					<label for="name">Your Name </label>
-				</div>
-				<div class="col-36 form-lone">
-					<input type="text" class="name first-name limit-width">
-				</div>
-				<div class="col-36 form-lone">
-					<input type="text" class="name last-name">
-				</div>
-			</div>
 
-			<div class="form-area">	
-				<div class="col-25 form-lone">
-					<label for="email">Your Email </label>
-				</div>
-				<div class="col-72 form-lone">
-					<input type="text" class="email">
-				</div>
-			</div>
+      <table>
+  <td>
+    <label for="name">Your Name </label>
+  </td>
+  <td colspan="4" class="td-name">
+    <input type="text" class="name first-name ">
+    <input type="text" class="name last-name">
+  </td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td colspan="4">
+      <input type="text" class="email">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="phone">Your phone* </label>
+    </td>
+    <td>
+      <input type="text" class="phone">
+    </td>
+    <td>
+      <input type="text" class="phone">
+    </td>
+    <td>
+      <input type="text" class="phone">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="">Message Subject*</label>
+    </td>
+    <td colspan="2">
+      <select name="" id="">
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+        <option value="">Lorem, ipsum dolor.</option>
+      </select>
+    </td>
+  <tr>
+    <td><label for="">Message*</label></td>
+    <td colspan="3"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+  </tr>
+  </tr>
+  <tr>
+    <td>Verifycation*</td>
+    <td colspan="3">
+      <div class="g-recaptcha form-lone" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <div class="line"></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button type="button" class="submit-btn">Submit</button>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
-			<div class="form-area">
-				<div class="col-25 form-lone">
-					<label for="phone">Your phone* </label>
-				</div>
-				<div class="col-24 form-lone">
-					<input type="text" class="phone phone-head limit-width">
-				</div>
-				<div class="col-24 form-lone">
-					<input type="text" class="phone phone-middle limit-width">
-				</div>
-				<div class="col-24 form-lone">
-					<input type="text" class="phone phone-end">
-				</div>
-			</div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
-			<div class="form-area">
-				<div class="col-25 form-lone">
-					<label for="msg-obj">Message Subject* </label>
-				</div>
-				<div class="col-72 form-lone">
-					<input class=" msg-obj" type="text"></input>
-				</div>
-			</div>
 
-			<div class="form-area">
-				<div class="col-25 form-lone">
-					<label for="msg">Message* </label>
-				</div>
-				<div class="col-72 form-lone">
-					<input type="text" class="msg">
-				</div>
-			</div>
 
-			<div class="form-area">
-				<div class="col-25 form-lone">
-					<label class="verify">Verification*</label>
-				</div>
-				 <div  class="g-recaptcha form-lone" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
-			</div>
-			<div class="line"></div>
-			<div class="form-area">
-				<div class="form-lone">
-					<button class="button" type="button">Submit</button>
-				</div>
-			</div>
-		</div>
-		<div class="main-column side side-right"> </div>
-	</div>
-</body>
+  </div>
+</div>
+<div class="container-content col-sm-2 col-lg-2 side">
+  
+</div>
+</div>
+<div class="footer">
+</div>
 <script src='https://www.google.com/recaptcha/api.js'></script>
