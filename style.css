@@ -1,0 +1,97 @@
+*{
+  margin:0; padding:0;
+  font-family: 'Segoe UI',Arial,sans-serif;
+  text-align: justify;
+   /*border: 1px solid #f00; */
+}
+.header{
+  padding: 10px 10px 0 10px;
+  width: auto;
+  height: 58px;
+}
+.say-hi{
+  font-size: 35px;
+  color:#ff9f52;
+  float: left;
+}
+.say-hi:hover{
+  color: #ef7513;
+}
+.recruiter{
+  color: #ef7513;
+}
+.intro{
+  display: none;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #00a08e;
+  right:0;
+  float: right;
+  margin: 0 20px 0 0;
+  padding: 10px 0 0 15px;
+}
+.sticky{
+  width: auto;
+  height: 44px;
+  background: #3d9bb9;
+  position: sticky;
+  top:0;
+}
+.home{
+  float: left;
+}
+.home img{
+  width: 45px;
+  height: 43px;
+  opacity: 0.7;
+}
+.forward{
+  padding: 3px 0 0 60px;
+  font-size: 12px;
+}
+.forward a {
+  text-decoration: none;
+}
+.container{
+  clear: both:
+  content: "";
+  display: table;
+}
+.contai-ctrl{
+  float: left;
+}
+.side .side-left{
+  margin: 0;
+  /*padding: 10px;*/
+  display:none;
+}
+.side .side-right{
+  margin: 0;
+  /*padding: 10px;*/
+  display: none;
+}
+.content{
+  
+}
+@media screen and (min-width: 768px){
+  .col-lg-2{width: 16.66%}
+  .col-lg-8{width: 66.66%}
+  .side, .intro{
+    display: block;
+  }
+  .forward{
+    font-size: initial;
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 600px){
+  .col-sm-2{width: 16.66%}
+  .col-sm-8{width: 66.66%}
+  .side, .intro{
+    display: block;
+  }
+  .forward{
+    font-size: initial;
+    padding: 8px;
+  }
+}
